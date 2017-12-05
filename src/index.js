@@ -6,6 +6,9 @@ class A {
   say() {
     console.log(this.name)
   }
+  sayHello() {
+    console.log('Hello, ' + this.name)
+  }
 }
 
 
