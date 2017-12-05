@@ -2,8 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - image: debian:stretch
+      - image: node
     steps:
       - checkout
-      - run: pm test
+      - run: npm test
 
