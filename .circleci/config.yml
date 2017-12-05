@@ -6,6 +6,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: say hello
-        command: echo 'hello'
+        name: npm test
+        command: npm test
 
