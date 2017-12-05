@@ -5,7 +5,5 @@ jobs:
       - image: debian:stretch
     steps:
       - checkout
-      - run:
-        name: npm test
-        command: npm test
+      - run: pm test
 
