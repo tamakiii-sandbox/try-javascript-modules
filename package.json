@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tamakiii/try-javascript-modules/issues"
   },
-  "homepage": "https://github.com/tamakiii/try-javascript-modules#readme"
+  "homepage": "https://github.com/tamakiii/try-javascript-modules#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1"
+  }
 }
