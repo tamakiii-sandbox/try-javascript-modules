@@ -11,4 +11,9 @@ jobs:
       - run:
           name: Print the Current Time
           command: date
+      - run:
+        name: command pipe
+        command: |
+          echo multiple
+          echo rows
 
