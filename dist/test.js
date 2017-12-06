@@ -1,20 +1,19 @@
-"use strict";
+'use strict';
 
-var _User = require("./User");
+var _promise = require('babel-runtime/core-js/promise');
 
-var _User2 = _interopRequireDefault(_User);
-
-var _Programmer = require("./Programmer");
-
-var _Programmer2 = _interopRequireDefault(_Programmer);
+var _promise2 = _interopRequireDefault(_promise);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log(_User2.default);
-console.log(_Programmer2.default);
+var name = './User';
+// const name = './Programmer'
 
-var user = new _User2.default('John');
-var programmer = new _Programmer2.default('Michel');
-
-console.log(user);
-console.log(programmer);
+_promise2.default.resolve().then(function () {
+  return require(name + '.js');
+}).then(function (Module) {
+  var u = new Module.default('John');
+  console.log(u.hello());
+}).catch(function (err) {
+  console.log(err.message);
+});

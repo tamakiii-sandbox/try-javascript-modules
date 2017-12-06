@@ -1,11 +1,12 @@
-import User from "./User"
-import Programmer from "./Programmer"
+const name = './User'
+// const name = './Programmer'
 
-console.log(User)
-console.log(Programmer)
+import(`${name}.js`)
+  .then(Module => {
+    const u = new Module.default('John')
+    console.log(u.hello())
+  })
+  .catch(err => {
+    console.log(err.message)
+  })
 
-const user = new User('John')
-const programmer = new Programmer('Michel')
-
-console.log(user)
-console.log(programmer)
