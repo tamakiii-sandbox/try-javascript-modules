@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config webpack.config.js",
     "test": "echo \"Add run test here\" && exit 0"
   },
   "repository": {
