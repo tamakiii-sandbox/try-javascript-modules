@@ -863,7 +863,7 @@ var _Person2 = __webpack_require__(86);
 
 var _Person3 = _interopRequireDefault(_Person2);
 
-var _app = __webpack_require__(91);
+var _app = __webpack_require__(87);
 
 var _app2 = _interopRequireDefault(_app);
 
@@ -885,7 +885,7 @@ var Friend = function (_Person) {
   }, {
     key: 'getUrl',
     value: function getUrl() {
-      return __webpack_require__(87);
+      return __webpack_require__(92);
     }
   }]);
   return Friend;
@@ -1767,19 +1767,10 @@ exports.default = Person;
 /* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "c529c7049407b42659346e6509dbfe90.jpg";
-
-/***/ }),
-/* 88 */,
-/* 89 */,
-/* 90 */,
-/* 91 */
-/***/ (function(module, exports, __webpack_require__) {
-
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(92);
+var content = __webpack_require__(88);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -1787,7 +1778,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(94)(content, options);
+var update = __webpack_require__(90)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -1804,10 +1795,10 @@ if(false) {
 }
 
 /***/ }),
-/* 92 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(93)(undefined);
+exports = module.exports = __webpack_require__(89)(undefined);
 // imports
 
 
@@ -1820,7 +1811,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 93 */
+/* 89 */
 /***/ (function(module, exports) {
 
 /*
@@ -1902,7 +1893,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 94 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -1958,7 +1949,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(95);
+var	fixUrls = __webpack_require__(91);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -2274,7 +2265,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 95 */
+/* 91 */
 /***/ (function(module, exports) {
 
 
@@ -2367,6 +2358,12 @@ module.exports = function (css) {
 	return fixedCss;
 };
 
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "c529c7049407b42659346e6509dbfe90.jpg";
 
 /***/ })
 /******/ ]);
