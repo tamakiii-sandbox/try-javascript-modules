@@ -7,6 +7,7 @@ module.exports = {
     path: __dirname + '/dist',
     filename: '[name].js'
   },
+  target: "node",
   module: {
     rules: [
       {
@@ -15,6 +16,20 @@ module.exports = {
         include: [
           __dirname + '/src'
         ]
+      },
+      {
+        test: /\.(jpg|jpeg|gif|png|svg)$/,
+        loader: 'url-loader',
+        options: {
+          name: '[path][name].[hash].[ext]'
+        }
+      },
+      {
+        test: /\.(jpg|jpeg|gif|png|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[hash].[ext]'
+        }
       }
     ]
   }

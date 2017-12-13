@@ -9,4 +9,3 @@ import(`${name}.js`)
   .catch(err => {
     console.log(err.message)
   })
-
