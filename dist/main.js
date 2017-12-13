@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 157);
+/******/ 	return __webpack_require__(__webpack_require__.s = 88);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,7 +104,7 @@ module.exports = function (bitmap, value) {
 
 /***/ }),
 
-/***/ 14:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
 // 7.1.1 ToPrimitive(input [, PreferredType])
@@ -123,7 +123,7 @@ module.exports = function (it, S) {
 
 /***/ }),
 
-/***/ 15:
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -139,98 +139,11 @@ exports.default = function (instance, Constructor) {
 
 /***/ }),
 
-/***/ 157:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(158);
-module.exports = __webpack_require__(159);
-
-
-/***/ }),
-
-/***/ 158:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _classCallCheck2 = __webpack_require__(15);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(20);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var A = function () {
-  function A(name) {
-    (0, _classCallCheck3.default)(this, A);
-
-    this.name;
-  }
-
-  (0, _createClass3.default)(A, [{
-    key: 'say',
-    value: function say() {
-      console.log(this.name);
-    }
-  }, {
-    key: 'sayHello',
-    value: function sayHello() {
-      console.log('Hello, ' + this.name);
-    }
-  }]);
-  return A;
-}();
-
-/***/ }),
-
-/***/ 159:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _classCallCheck2 = __webpack_require__(15);
-
-var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-
-var _createClass2 = __webpack_require__(20);
-
-var _createClass3 = _interopRequireDefault(_createClass2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var A = function () {
-  function A(name) {
-    (0, _classCallCheck3.default)(this, A);
-
-    this.name;
-  }
-
-  (0, _createClass3.default)(A, [{
-    key: 'say',
-    value: function say() {
-      console.log(this.name);
-    }
-  }, {
-    key: 'sayHello',
-    value: function sayHello() {
-      console.log('Hello, ' + this.name);
-    }
-  }]);
-  return A;
-}();
-
-/***/ }),
-
-/***/ 17:
+/***/ 16:
 /***/ (function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
-var aFunction = __webpack_require__(25);
+var aFunction = __webpack_require__(23);
 module.exports = function (fn, that, length) {
   aFunction(fn);
   if (that === undefined) return fn;
@@ -253,17 +166,17 @@ module.exports = function (fn, that, length) {
 
 /***/ }),
 
-/***/ 18:
+/***/ 17:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = !__webpack_require__(0) && !__webpack_require__(7)(function () {
-  return Object.defineProperty(__webpack_require__(19)('div'), 'a', { get: function () { return 7; } }).a != 7;
+  return Object.defineProperty(__webpack_require__(18)('div'), 'a', { get: function () { return 7; } }).a != 7;
 });
 
 
 /***/ }),
 
-/***/ 19:
+/***/ 18:
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(4);
@@ -277,16 +190,7 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ 2:
-/***/ (function(module, exports) {
-
-var core = module.exports = { version: '2.5.1' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-
-/***/ 20:
+/***/ 19:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -294,7 +198,7 @@ if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 exports.__esModule = true;
 
-var _defineProperty = __webpack_require__(26);
+var _defineProperty = __webpack_require__(24);
 
 var _defineProperty2 = _interopRequireDefault(_defineProperty);
 
@@ -320,7 +224,16 @@ exports.default = function () {
 
 /***/ }),
 
-/***/ 25:
+/***/ 2:
+/***/ (function(module, exports) {
+
+var core = module.exports = { version: '2.5.1' };
+if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
+
+
+/***/ }),
+
+/***/ 23:
 /***/ (function(module, exports) {
 
 module.exports = function (it) {
@@ -331,17 +244,17 @@ module.exports = function (it) {
 
 /***/ }),
 
-/***/ 26:
+/***/ 24:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = { "default": __webpack_require__(27), __esModule: true };
+module.exports = { "default": __webpack_require__(25), __esModule: true };
 
 /***/ }),
 
-/***/ 27:
+/***/ 25:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(28);
+__webpack_require__(26);
 var $Object = __webpack_require__(2).Object;
 module.exports = function defineProperty(it, key, desc) {
   return $Object.defineProperty(it, key, desc);
@@ -350,7 +263,7 @@ module.exports = function defineProperty(it, key, desc) {
 
 /***/ }),
 
-/***/ 28:
+/***/ 26:
 /***/ (function(module, exports, __webpack_require__) {
 
 var $export = __webpack_require__(5);
@@ -364,8 +277,8 @@ $export($export.S + $export.F * !__webpack_require__(0), 'Object', { definePrope
 /***/ (function(module, exports, __webpack_require__) {
 
 var anObject = __webpack_require__(9);
-var IE8_DOM_DEFINE = __webpack_require__(18);
-var toPrimitive = __webpack_require__(14);
+var IE8_DOM_DEFINE = __webpack_require__(17);
+var toPrimitive = __webpack_require__(13);
 var dP = Object.defineProperty;
 
 exports.f = __webpack_require__(0) ? Object.defineProperty : function defineProperty(O, P, Attributes) {
@@ -398,7 +311,7 @@ module.exports = function (it) {
 
 var global = __webpack_require__(1);
 var core = __webpack_require__(2);
-var ctx = __webpack_require__(17);
+var ctx = __webpack_require__(16);
 var hide = __webpack_require__(6);
 var PROTOTYPE = 'prototype';
 
@@ -490,6 +403,54 @@ module.exports = function (exec) {
 
 /***/ }),
 
+/***/ 88:
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(89);
+module.exports = __webpack_require__(90);
+
+
+/***/ }),
+
+/***/ 89:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck2 = __webpack_require__(14);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(19);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var A = function () {
+  function A(name) {
+    (0, _classCallCheck3.default)(this, A);
+
+    this.name;
+  }
+
+  (0, _createClass3.default)(A, [{
+    key: 'say',
+    value: function say() {
+      console.log(this.name);
+    }
+  }, {
+    key: 'sayHello',
+    value: function sayHello() {
+      console.log('Hello, ' + this.name);
+    }
+  }]);
+  return A;
+}();
+
+/***/ }),
+
 /***/ 9:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -499,6 +460,45 @@ module.exports = function (it) {
   return it;
 };
 
+
+/***/ }),
+
+/***/ 90:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _classCallCheck2 = __webpack_require__(14);
+
+var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+
+var _createClass2 = __webpack_require__(19);
+
+var _createClass3 = _interopRequireDefault(_createClass2);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var A = function () {
+  function A(name) {
+    (0, _classCallCheck3.default)(this, A);
+
+    this.name;
+  }
+
+  (0, _createClass3.default)(A, [{
+    key: 'say',
+    value: function say() {
+      console.log(this.name);
+    }
+  }, {
+    key: 'sayHello',
+    value: function sayHello() {
+      console.log('Hello, ' + this.name);
+    }
+  }]);
+  return A;
+}();
 
 /***/ })
 
