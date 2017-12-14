@@ -36,5 +36,10 @@ module.exports = {
         loaders: ['style-loader', 'css-loader?modules'],
       }
     ]
-  }
+  },
+  plugins: [
+    new require('copy-webpack-plugin')([
+      { from: __dirname + '/dist', to: __dirname + '/public/dist' },
+    ])
+  ]
 };
