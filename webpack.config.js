@@ -4,7 +4,7 @@ module.exports = {
     'app': __dirname + '/src/app.js',
   },
   output: {
-    path: __dirname + '/dist',
+    path: __dirname + '/bundle',
     filename: '[name].js'
   },
   target: "node",
@@ -40,6 +40,7 @@ module.exports = {
   plugins: [
     new require('copy-webpack-plugin')([
       { from: __dirname + '/dist', to: __dirname + '/public/dist' },
-    ])
+    ]),
+    // new require('webpack').optimize.UglifyJsPlugin()
   ]
 };
