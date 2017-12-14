@@ -1,4 +1,9 @@
 {
   "presets": ["env"],
-  "plugins": ["transform-runtime", "dynamic-import-node", "transform-es2015-modules-commonjs"]
+  "plugins": ["transform-runtime", "dynamic-import-node", "transform-es2015-modules-commonjs"],
+  "env": {
+    "test": {
+      "presets": ["env"]
+    }
+  }
 }

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config webpack.config.js",
     "test": "echo \"Add run test here\" && exit 0"
   },
   "repository": {
@@ -18,12 +19,24 @@
   "homepage": "https://github.com/tamakiii/try-javascript-modules#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.3",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
     "babel-plugin-dynamic-import-node": "^1.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^4.12.1"
+    "copy-webpack-plugin": "^4.3.0",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.12.1",
+    "file-loader": "^1.1.5",
+    "jest": "^21.2.1",
+    "regenerator-runtime": "^0.11.1",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0"
